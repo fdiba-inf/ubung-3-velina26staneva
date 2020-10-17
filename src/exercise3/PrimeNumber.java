@@ -12,9 +12,10 @@ public class PrimeNumber {
     int d = 2;
     boolean prime = true;
 
-    while (prime &&(number>d)) {
+    while (number>d) {
       if (number %d==0) {
-        prime = false; 
+        prime = false;
+        break; 
       }
       d++;
     }
